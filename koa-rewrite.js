@@ -9,6 +9,7 @@ router.get('/api/new/getUserInfo', async ( ctx ) => {
   ctx.body = '这是新接口数据！'
 })
 
+
 app.use(rewrite('/api/getUserInfo', '/api/new/getUserInfo'));
 app.use(router.routes())
 
