@@ -4,9 +4,9 @@ const Koa = require('koa')
 const app = new Koa()
 
 // actions的绝对路径
-const basePath = path.resolve(__dirname, '/actions')
+const basePath = path.resolve(__dirname, './actions')
 // 获取actions目录下所有的.js文件, 并返回其绝对路径
-const filesList = glob.sync(path.resolve(__dirname, '/actions', '**/*.js'))
+const filesList = glob.sync(path.resolve(__dirname, './actions', '**/*.js'))
 
 // 文件路由映射表
 let routerMap = {}
